@@ -1,0 +1,91 @@
+{
+		"2gpo":{
+			"pdb_id":"2gpo",
+			"original":{
+				"firstModelOnly":true,
+				"residue_color_definitions":[
+					["blue", ":A"],
+					["orange", ":C"],
+					["white", "*"]
+				]
+			},
+			"overlap":{
+				"firstModelOnly":false,
+				"residue_color_definitions":[
+					["red", ":A/0"],
+					["green", ":B/0"],
+					["orange", ":C/1"],
+					["blue", ":D/1"],
+					["white", "*"]
+				]
+			},
+			"alphafold":{
+				"firstModelOnly":true,
+				"residue_color_definitions":[
+					["red", ":A/0"],
+					["green", ":B/0"],
+					["orange", ":C/1"],
+					["blue", ":D/1"],
+					["white", "*"]
+				]
+			},
+		},
+		"2las":{
+			"pdb_id":"2las",
+			"original":{
+				"firstModelOnly":true,
+				"residue_color_definitions":[
+					["blue", ":A"],
+					["orange", ":B"],
+					["white", "*"]
+				]
+			},
+			"overlap":{
+				"firstModelOnly":false,
+				"residue_color_definitions":[
+					["green", ":D/0"],
+					["red", ":C/0"],
+					["orange", ":B/1"],
+					["blue", ":A/1"],
+					["white", "*"]
+				]
+			},
+			"alphafold":{
+				"firstModelOnly":true,
+				"residue_color_definitions":[
+					["red", ":A"],
+					["green", ":B"],
+					["white", "*"]
+				]
+			},
+		},
+		"3uzd":{
+			"pdb_id":"3uzd",
+			"original":{
+				"firstModelOnly":true,
+				"residue_color_definitions":[
+					["blue", ":A"],
+					["orange", ":B"],
+					["white", "*"]
+				]
+			},
+			"overlap":{
+				"firstModelOnly":false,
+				"residue_color_definitions":[
+					["red", ":C/0"],
+					["green", ":D/0"],
+					["blue", ":A/1"],
+					["orange", ":B/1"],
+					["white", "*"]
+				]
+			},
+			"alphafold":{
+				"firstModelOnly":true,
+				"residue_color_definitions":[
+					["red", ":A"],
+					["green", ":B"],
+					["white", "*"]
+				]
+			},
+		},
+	}

@@ -6,6 +6,8 @@
 
 ## *Examples*
 
+In every example folded protein domains are shown in surface representation and IDRs are shown in ribbon. AlphaFold predictions are shown in tan colour, while the experimentally determined structures are shown in purple (or similar) colours. In all cases below AlphaFold predicts the structure of folded domains near-perfectly (typically within 1-2A RMSD). These predicted structures are not shown separately as their surfaces coincides with the surface generated from the experimental structures.
+
 **NRBOX motif in NRIP1 bound to ERR3**
 *Definition:*
 Short motif forming an amphipathic helix binding into a well defined, single hydrophobic pocket. Easy as it gets, AF works perfectly

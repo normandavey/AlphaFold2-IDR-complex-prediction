@@ -8,6 +8,7 @@
 
 In every example folded protein domains are shown in surface representation and IDRs are shown in ribbon. AlphaFold predictions are shown in tan colour, while the experimentally determined structures are shown in purple (or similar) colours. In all cases below AlphaFold predicts the structure of folded domains near-perfectly (typically within 1-2A RMSD). These predicted structures are not shown separately as their surfaces coincides with the surface generated from the experimental structures.
 
+### *Single IDRs binding to single domains with various bound structures*
 **NRBOX motif in NRIP1 bound to ERR3**
 *Definition:*
 Short motif forming an amphipathic helix binding into a well defined, single hydrophobic pocket on the surface of the partner domain.
@@ -105,6 +106,7 @@ AlphaFold correctly folds the domain and it very precisely finds the correct pos
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/6zee_structure_comparison.png" width="500" height="297">
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/6zee_lDDT.png" width="500" height="333">
 
+### *Motifs/IDRs binding to dimeric structured partners*
 
 
 

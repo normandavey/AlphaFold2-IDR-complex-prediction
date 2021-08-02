@@ -81,4 +81,19 @@ AlphaFold correctly folds the TAZ domain of CBP, even though the native structur
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2lww_lDDT.png" width="500" height="333">
 
 
+**Cyclin-A2 bound to Cdc20**
+*Definition:*
+The disordered tail of cyclin-A2 binds to the beta propeller domain of Cdc20 using three motifs binding to three separate pockets. The bound structure of the IDR is coil-like without any regular secondary structures and the linkers between the three motifs remain disordered even upon binding.
+1 ordered protein + 1 IDR
+PDB:6q6g
+
+*Results:*
+AlphaFold folds the domain near perfectly; however, it cannot fold the IDR on the surface of the domain. It does recognize a hydrophobic patch in the IDR (AALAVL) and it places close to the true binding pocket for this bit, however in the wrong conformation (alpha helix instead of a coil-like conformation). The rest of the IDR has no predicted contacts with the domain.
+
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/6q6g_structure_comparison.png" width="500" height="297">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/6q6g_lDDT.png" width="500" height="333">
+
+
+
+
 

@@ -67,3 +67,18 @@ Interestingly, the region occupied by KID in the AlphaFold model is a true bindi
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1kdx_structure_comparison.png" width="500" height="306">
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1kdx_lDDT.png" width="500" height="333">
 
+
+**TAD of RelA bound to the TAZ domain of CREB-binding protein (CBP)**
+*Definition:*
+The disordered RelA binding region is significantly longer than previous examples. It wraps around the TAZ domain making contacts at 4 distinct patches, adopting mostly helical conformations at these 4 sites.
+1 ordered protein + 1 IDR
+PDB:2lww
+
+*Results:*
+AlphaFold correctly folds the TAZ domain of CBP, even though the native structure contains 3 Zn2+ ions, which AF cannot model. AlphaFold also correctly identifies the four binding surfaces and also folds RelA into helical conformations at these sites. However, in the predicted structure RelA is in the wrong orientation. In the figure below, the measured RelA (purple) wraps counterclockwise with both termini on the bottom. The predicted RelA wraps in the opposite direction, with both termini on the top. AlphaFold again assigns a high confidence score to the peptide prediction.
+
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2lww_structure_comparison.png" width="500" height="306">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2lww_lDDT.png" width="500" height="333">
+
+
+

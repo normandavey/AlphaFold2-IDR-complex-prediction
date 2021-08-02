@@ -53,4 +53,17 @@ AlphaFold correctly identifies the binding groove and correctly assignes a coil-
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/3uzd_structure_comparison_mimE.png" width="500" height="293">
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/3uzd_lDDT-mimE.png" width="500" height="333">
 
- 
+
+**pKID binding to the KIX domain**
+*Definition:*
+The disordered KID region binds to the KIX domain upon phosphorylation. pKID binds to two distinct patches on KIX adopting helical bound structures. The interaction is phospho-depndent and KIX isn’t fully stable in the unbound form, so the prediction of the domain structure might be more challenging than usual.
+Composition: 1 ordered protein + 1 IDR
+PDB:1kdx
+
+*Results:*
+AlphaFold correctly folds the KIX domain and it also correctly folds KID into a helical structure that is very close to the actual bound structure. However, it places KID in a completely different surface on the KIX domain. In contrast to previous errors, here AlphaFold assigns a high confidence to the prediction.
+Interestingly, the region occupied by KID in the AlphaFold model is a true binding site, the C-terminal part of the bound FOXO3 TAD region shows a high similarity to KID in the predicted model (PDB:2lqh) (similarly to the lysine N-methyltransferase 2A peptide (PDB:2agh) and p65 peptide (PDB:5u4k) bound structures).
+
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1kdx_structure_comparison.png" width="500" height="306">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1kdx_lDDT.png" width="500" height="333">
+

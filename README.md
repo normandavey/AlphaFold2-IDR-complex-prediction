@@ -94,6 +94,19 @@ AlphaFold folds the domain near perfectly; however, it cannot fold the IDR on th
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/6q6g_lDDT.png" width="500" height="333">
 
 
+**Phactr1 bound to PP1**
+*Definition:*
+A disordered part of Phactr1 wraps around the PP1 domain establishing contacts at several points. The N-terminal region adopts a coil-like structure with two short bits in beta-augmentation. The C-terminal region adopts a largely helical conformation.
+PDB:6zee
+
+*Results:*
+AlphaFold correctly folds the domain and it very precisely finds the correct position and orientation for the IDR (RMSD=0.903A). The high precision might have something to do with the IDR being asymmetric (helical on one end, beta on the other), adopting regular secondary structure and being fairly long.
+
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/6zee_structure_comparison.png" width="500" height="297">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/6zee_lDDT.png" width="500" height="333">
+
+
+
 
 
 

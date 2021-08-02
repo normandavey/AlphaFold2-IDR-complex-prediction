@@ -10,8 +10,8 @@ In every example folded protein domains are shown in surface representation and 
 
 **NRBOX motif in NRIP1 bound to ERR3**
 *Definition:*
-Short motif forming an amphipathic helix binding into a well defined, single hydrophobic pocket. Easy as it gets, AF works perfectly
-1 ordered protein + 1 IDR
+Short motif forming an amphipathic helix binding into a well defined, single hydrophobic pocket on the surface of the partner domain.
+Composition: 1 ordered protein + 1 IDR
 PDB:2gpo
 
 *Results:*
@@ -20,3 +20,17 @@ In the original structure only the core motif is visible, AlphaFold also predict
 
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2gpo_structure_comparison.png" width="500" height="294">
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2gpo_lDDT.png" width="500" height="333">
+
+
+**RanBP2 SIM (SUMO interacting motif) bound to SUMO**
+*Definition:*
+Short motif forming an additional strand in the beta sheet of the partner domain (beta augmentation).
+Composition: 1 ordered protein + 1 IDR
+PDB:2las
+
+*Results:*
+RMSD between predicted and experimental ligand conformations: 1.279A
+AlphaFold correctly identifies the beta augmentation and the conformation of the side chains in the core motif. It does miss some stabilizing contacts at the edges, most notably it places the C-terminal Phe outside of the native binding pocket (flipping upwards in the top right of the image). AlphaFold correspondingly assigns a lower pLDDT value to the terminal regions of the peptide.
+
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2las_structure_comparison.png" width="500" height="294">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2las_lDDT.png" width="500" height="333">

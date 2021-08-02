@@ -34,3 +34,23 @@ AlphaFold correctly identifies the beta augmentation and the conformation of the
 
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2las_structure_comparison.png" width="500" height="306">
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2las_lDDT.png" width="500" height="333">
+
+
+**Histone deacetylase 4 14-3-3 phosphomotif bound to 14-3-3gamma**
+*Definition:*
+A short IDR binding to a groove inside a 14-3-3 domain, adopting an irregular conformation. The interaction requires a phosphorylated serine.
+Composition: 1 ordered protein + 1 IDR
+PDB:3uzd
+
+*Results:*
+AlphaFold correctly identifies the binding groove and correctly assignes a coil-like conformation to the peptide, but is not able to fit the peptide into the correct position. One of the reasons could be that AlphaFold cannot model modified residues (the pSer in the original structure and the Ser in the predicted structure are shown in red).
+
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/3uzd_structure_comparison.png" width="500" height="293">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/3uzd_lDDT.png" width="500" height="333">
+
+ Using a phosphomimetic (modeling the interaction after switching the Ser to Glu in the peptide) improves the orientation a little but the pSer and Glu occupy very different positions and the confidence score does not improve, so it is likely due to random chance.
+
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/3uzd_structure_comparison_mimE.png" width="500" height="293">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/3uzd_lDDT_mimE.png" width="500" height="333">
+
+ 

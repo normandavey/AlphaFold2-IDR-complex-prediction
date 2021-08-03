@@ -4,6 +4,11 @@
 
 ...
 
+## *Running AlphaFold predictions*
+
+All AlphaFold predictions were run using the sequences defined in the PDB files (not including modified residues and other molecules). Predictions were done using the Google Colab notebooks by Sergey Ovchinnikov (@sokrypton), Milot Mirdita (@milot_mirdita) and Martin Steinegger (@thesteinegger). Credit goes to Minkyung Baek (@minkbaek) and Yoshitaka Moriwaki (@Ag_smith) as well, for protein-complex prediction proof-of-concept in AlphaFold2.
+
+
 ## *Examples*
 
 In every example folded protein domains are shown in surface representation and IDRs are shown in ribbon. AlphaFold predictions are shown in tan colour, while the experimentally determined structures are shown in purple (or similar) colours. In all cases below AlphaFold predicts the structure of folded domains near-perfectly (typically within 1-2A RMSD). These predicted structures are not shown separately as their surfaces coincides with the surface generated from the experimental structures.

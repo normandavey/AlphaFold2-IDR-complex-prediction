@@ -8,10 +8,10 @@
 
 In every example folded protein domains are shown in surface representation and IDRs are shown in ribbon. AlphaFold predictions are shown in tan colour, while the experimentally determined structures are shown in purple (or similar) colours. In all cases below AlphaFold predicts the structure of folded domains near-perfectly (typically within 1-2A RMSD). These predicted structures are not shown separately as their surfaces coincides with the surface generated from the experimental structures.
 
-### *Single IDRs binding to single domains with various bound structures*
+### *Motifs/IDRs binding to single domains*
 **NRBOX motif in NRIP1 bound to ERR3**
 *Definition:*
-Short motif forming an amphipathic helix binding into a well defined, single hydrophobic pocket on the surface of the partner domain.
+Short motif forming an amphipathic *helix* binding into a well defined, single hydrophobic pocket on the surface of the partner domain.
 Composition: 1 ordered protein + 1 IDR
 PDB:2gpo
 
@@ -25,7 +25,7 @@ In the original structure only the core motif is visible, AlphaFold also predict
 
 **RanBP2 SIM (SUMO interacting motif) bound to SUMO**
 *Definition:*
-Short motif forming an additional strand in the beta sheet of the partner domain (beta augmentation).
+Short motif forming an additional strand in the *beta sheet* of the partner domain (beta augmentation).
 Composition: 1 ordered protein + 1 IDR
 PDB:2las
 
@@ -39,7 +39,7 @@ AlphaFold correctly identifies the beta augmentation and the conformation of the
 
 **Histone deacetylase 4 14-3-3 phosphomotif bound to 14-3-3gamma**
 *Definition:*
-A short IDR binding to a groove inside a 14-3-3 domain, adopting an irregular conformation. The interaction requires a phosphorylated serine.
+A short IDR binding to a groove inside a 14-3-3 domain, adopting an *irregular conformation*. The interaction requires a *phosphorylated serine*.
 Composition: 1 ordered protein + 1 IDR
 PDB:3uzd
 
@@ -57,7 +57,7 @@ AlphaFold correctly identifies the binding groove and correctly assignes a coil-
 
 **pKID binding to the KIX domain**
 *Definition:*
-The disordered KID region binds to the KIX domain upon phosphorylation. pKID binds to two distinct patches on KIX adopting helical bound structures. The interaction is phospho-depndent and KIX isn’t fully stable in the unbound form, so the prediction of the domain structure might be more challenging than usual.
+The disordered KID region binds to the KIX domain upon phosphorylation. pKID binds to *two distinct patches* on KIX adopting *helical* bound structures. The interaction is *phospho-dependent* and KIX isn’t fully stable in the unbound form, so the prediction of the domain structure might be more challenging than usual.
 Composition: 1 ordered protein + 1 IDR
 PDB:1kdx
 
@@ -71,7 +71,7 @@ Interestingly, the region occupied by KID in the AlphaFold model is a true bindi
 
 **TAD of RelA bound to the TAZ domain of CREB-binding protein (CBP)**
 *Definition:*
-The disordered RelA binding region is significantly longer than previous examples. It wraps around the TAZ domain making contacts at 4 distinct patches, adopting mostly helical conformations at these 4 sites.
+The disordered RelA binding region is significantly longer than previous examples. It wraps around the TAZ domain making contacts at *4 distinct patches*, adopting mostly *helical conformations* at these 4 sites.
 1 ordered protein + 1 IDR
 PDB:2lww
 
@@ -84,7 +84,7 @@ AlphaFold correctly folds the TAZ domain of CBP, even though the native structur
 
 **Cyclin-A2 bound to Cdc20**
 *Definition:*
-The disordered tail of cyclin-A2 binds to the beta propeller domain of Cdc20 using three motifs binding to three separate pockets. The bound structure of the IDR is coil-like without any regular secondary structures and the linkers between the three motifs remain disordered even upon binding.
+The disordered tail of cyclin-A2 binds to the beta propeller domain of Cdc20 using three motifs binding to *three separate pockets*. The bound structure of the IDR is *coil-like* without any regular secondary structures and the linkers between the three motifs remain disordered even upon binding.
 1 ordered protein + 1 IDR
 PDB:6q6g
 
@@ -97,7 +97,8 @@ AlphaFold folds the domain near perfectly; however, it cannot fold the IDR on th
 
 **Phactr1 bound to PP1**
 *Definition:*
-A disordered part of Phactr1 wraps around the PP1 domain establishing contacts at several points. The N-terminal region adopts a coil-like structure with two short bits in beta-augmentation. The C-terminal region adopts a largely helical conformation.
+A disordered part of Phactr1 wraps around the PP1 domain establishing *contacts at several points*. The N-terminal region adopts a *coil-like* structure with two short bits in *beta-augmentation*. The C-terminal region adopts a largely *helical* conformation.
+1 ordered protein + 1 IDR
 PDB:6zee
 
 *Results:*
@@ -107,6 +108,20 @@ AlphaFold correctly folds the domain and it very precisely finds the correct pos
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/6zee_lDDT.png" width="500" height="333">
 
 ### *Motifs/IDRs binding to dimeric structured partners*
+
+
+**p27 bound to the CDK2:cyclinA complex**
+*Definition:*
+p27 is fully disordered with 83 residues binding to the ordered CDK2:cyclinA dimer. Upon binding p27 adopts an elongated structure containing several short patches of regular secondary structure and a longer helix that forms only very weak contacts and serves as a structural linker between the N- and C-terminal binding regions.
+2 ordered proteins + 1 IDR
+PDB:1jsu
+
+*Results:*
+AlphaFold folds the domains correctly and they have the right relative orientation. It also assigns a structure to the disordered p27 that is strikingly close to the actual bound conformation; however, it cannot fold it on the surface of the domain dimer. It does find the correct binding pocket for the C-terminal bit, but otherwise predicts p27 to have no contact with the domains.
+AlphaFold confidence is high in the prediction, reflecting the confidence in the local structure of p27 (which is indeed close to the actual bound one) and not its relationship to the folded domains. The PAE graph clearly shows that AlphaFold correctly assesses that the relative orientation of p27 (the end of the graph below) compared to the position of the dimers is very low confidence.
+
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1jsu_structure_comparison.png" width="500" height="306">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1jsu_lDDT.png" width="500" height="333"><img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1jsu_PAE.png" width="500" height="333">
 
 
 

@@ -2,7 +2,7 @@
 
 ## *Overview*
 
-...
+AlphaFold was trained to recognise the structure of proteins from the sequence in their monomeric form. However, quickly after the release of AlphaFold2 it became clear that in several cases AlphaFold can successfully predict the structure of protein complexes even without re-designing or re-training the algorithm. Linking two or more proteins with flexible linkers and using this as an input can simluate the interaction between the proteins by co-foldin them. 
 
 ## *Running AlphaFold predictions*
 

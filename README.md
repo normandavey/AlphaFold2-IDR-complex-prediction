@@ -8,7 +8,10 @@ Here we assess what information can be derived from AlphaFold2 predictions about
 
 AlphaFold was trained to recognise the structure of proteins from the sequence in their monomeric form. However, quickly after the release of AlphaFold2 it became clear that in several cases AlphaFold can successfully predict the structure of protein complexes even without re-designing or re-training the algorithm. Linking two or more proteins with flexible linkers and using this as an input can simluate the interaction between the proteins by co-folding them. This opens up exciting possiblities to explore protein-protein interactions.
 
-Intrinsically disordered proteins/regions (IDPs/IDRs) very often exert their function through interactions with other protein partners. 
+Intrinsically disordered proteins/regions (IDPs/IDRs) very often exert their function through interactions with other protein partners. Short binding IDRs often contain short linear motifs (SLiMs) where the interaction with the partner folded domain is driven by a few residues. The bound structures of SLiMs can be helical, irregular or they can form additional beta strands in an existing beta sheet of the partner domain. Longer IDRs can contain arrays of SLiMs and can form longer binding regions with highly varied secondary structure content in the bound form. IDRs can also form stable structures by interacting with each other forming homo- or heterooligomeric complexes.
+
+Here we selected 14 cases of complexes that involve one or more IDRs. The structure of each of these complexes have been experimentally determined and are in the PDB. We go through these complexes one by one, describe their distinguishing features and look at how the experimental complex is predicted by AlphaFold2.
+
 
 ## *Running AlphaFold predictions*
 

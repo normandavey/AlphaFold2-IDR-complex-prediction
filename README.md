@@ -10,7 +10,9 @@ AlphaFold was trained to recognise the structure of proteins from the sequence i
 
 Intrinsically disordered proteins/regions (IDPs/IDRs) very often exert their function through interactions with other protein partners. Short binding IDRs often contain short linear motifs (SLiMs) where the interaction with the partner folded domain is driven by a few residues. The bound structures of SLiMs can be helical, irregular or they can form additional beta strands in an existing beta sheet of the partner domain. Longer IDRs can contain arrays of SLiMs and can form longer binding regions with highly varied secondary structure content in the bound form. IDRs can also form stable structures by interacting with each other forming homo- or heterooligomeric complexes.
 
-Here we selected 14 cases of complexes that involve one or more IDRs. The structure of each of these complexes have been experimentally determined and are in PDB. We go through these complexes one by one, describe their distinguishing features and look at how the experimental complex is predicted by AlphaFold2. After the examples we summarise the factors that seem to influence the success of AlphaFold in identifying the correct complex structure.
+Here we selected 14 cases of complexes that involve one or more IDRs. The structure of each of these complexes have been experimentally determined and are in PDB. We go through these complexes one by one, describe their distinguishing features and look at how the experimental complex is predicted by AlphaFold2. Here you can look at the predicted and determined structures side-by-side or overlaid in an interactive structure viewer: http://slim.icr.ac.uk/projects/alphafold?page=alphafold_IDR_interface_prediction
+
+After the examples we summarise the factors that seem to influence the success of AlphaFold in identifying the correct complex structure.
 
 ## *Running AlphaFold predictions*
 

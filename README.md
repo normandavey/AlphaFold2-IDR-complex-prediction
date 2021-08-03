@@ -206,5 +206,21 @@ AlphaFold gives a near-perfect prediction on all three chains (overall RMSD=0.99
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2aze_lDDT.png" width="500" height="333">
 </p>
 
+**A collagen triple helix binding the A3 domain from the von Willebrand Factor (vWF)**
+*Definition:*
+The collagen triple helix is built up from three identical chains with very high glycine and proline (with some prolines being modified to hydroxyproline), with each chain adopting a PPII-like conformation. This triple helix needs to fold into the correct conformation to create the binding site for the vWF domain, which can bind by making contacts with two out of the three collagen chains. In reality this happens sequentially, AlphaFold needs to build up the whole complex in a single step.
+Composition: 1 ordered protein + 3 IDRs
+PDB:4dmu
+
+*Results:*
+AlphaFold is able to fold the domain from vWF near perfectly (RMSD=0.592 for the domain), but cannot assemble the collagen triple helix - even though it assigns a high confidence to collagen residues. Looks like the high Pro/Gly content is not compatible with a folded structure for AlphaFold. The lack of a hydrophobic core, regular secondary structures and sequence complexity are likely reasons for the lack of success (note: AlphaFold fails to assemble the collagen triple helix even without the vWF domain).
+
+<p float="left">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/4dmu_structure_comparison.png" width="500" height="306">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/4dmu_lDDT.png" width="500" height="333">
+</p>
+
+
+
 
 

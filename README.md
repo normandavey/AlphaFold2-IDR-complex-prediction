@@ -121,7 +121,9 @@ AlphaFold folds the domains correctly and they have the right relative orientati
 AlphaFold confidence is high in the prediction, reflecting the confidence in the local structure of p27 (which is indeed close to the actual bound one) and not its relationship to the folded domains. The PAE graph clearly shows that AlphaFold correctly assesses that the relative orientation of p27 (the end of the graph below) compared to the position of the dimers is very low confidence.
 
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1jsu_structure_comparison.png" width="500" height="306">
-<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1jsu_lDDT.png" width="500" height="333"><img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1jsu_PAE.png" width="500" height="333">
+<p float="left">
+ <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1jsu_lDDT.png" width="500" height="333"><img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1jsu_PAE.png" width="500" height="333">
+ </p>
 
 
 

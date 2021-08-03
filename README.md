@@ -165,4 +165,21 @@ AlphaFold gets the structure near perfect (RMSD=0.311A), including the Leu side 
 </p>
 
 
+**p53 tetramerization domain**
+*Definition:*
+Four copies of the C-terminal tetramerization region of p53 forms a dimer of dimers, adopting an intertwined structure with high helical content further stabilized with short beta sheets.
+Composition: 0 ordered proteins + 4 IDR
+PDB:2j0z
+
+*Results:*
+Both the conformations and the relative orientation of the four chains is near perfect (RMSD=0.909A).
+
+<p float="left">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2j0z_structure_comparison.png" width="500" height="306">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2j0z_lDDT.png" width="500" height="333">
+</p>
+
+
+
+
 

@@ -6,7 +6,9 @@
 
 ## *Running AlphaFold predictions*
 
-All AlphaFold predictions were run using the sequences defined in the PDB files (not including modified residues and other molecules). Predictions were done using the Google Colab notebooks by Sergey Ovchinnikov (@sokrypton), Milot Mirdita (@milot_mirdita) and Martin Steinegger (@thesteinegger). Credit goes to Minkyung Baek (@minkbaek) and Yoshitaka Moriwaki (@Ag_smith) as well, for protein-complex prediction proof-of-concept in AlphaFold2.
+All AlphaFold predictions were run using the sequences defined in the PDB files (not including modified residues and other molecules). Predictions were done using the Google Colab notebooks by Sergey Ovchinnikov (@sokrypton), Milot Mirdita (@milot_mirdita) and Martin Steinegger (@thesteinegger). Credit goes to Minkyung Baek (@minkbaek) and Yoshitaka Moriwaki (@Ag_smith) as well for protein-complex prediction proof-of-concept in AlphaFold2.
+* homooligomers were predicted using the notebook for monomers/homooligomers, accessible here: https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb
+* heterooligomers were predicted using the dedicated notebook, accessible here: https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2_complexes.ipynb In the case of dimers, the default settings were used. In case of higher order oligomers, one chain was used on its own (usually the IDR if there is only one), and the rest of the chains were concatenated using a long linker (either several 'U's or several repeats of 'SG's)
 
 
 ## *Examples*

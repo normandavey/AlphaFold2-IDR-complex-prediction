@@ -27,6 +27,7 @@ In every example folded protein domains are shown in surface representation and 
 ### *Motifs/IDRs binding to single domains*
 **NRBOX motif in NRIP1 bound to ERR3**
 *Definition:*
+
 Short motif forming an amphipathic *helix* binding into a well defined, single hydrophobic pocket on the surface of the partner domain.
 Composition: 1 ordered protein + 1 IDR
 PDB:2gpo

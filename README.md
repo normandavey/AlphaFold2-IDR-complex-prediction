@@ -1,8 +1,14 @@
 # AlphaFold2 IDR complex prediction
 
+This is a follow-up on our previous observations on how AlphaFold2 excells at recognising disordered protein regions from the sequence. For details on how AlphaFold2 functions as a binary disorder prediction, read our notes here: https://github.com/normandavey/ProcessedAlphafold
+
+Here we assess what information can be derived from AlphaFold2 predictions about how disordered proteins interact. Given the constraints in testing sets, running time and the complexity of disordered protein interactions, we do not show comprehensive analyses. Instead we focus on selected examples that highlight various flavours of disordered protein binding.
+
 ## *Overview*
 
-AlphaFold was trained to recognise the structure of proteins from the sequence in their monomeric form. However, quickly after the release of AlphaFold2 it became clear that in several cases AlphaFold can successfully predict the structure of protein complexes even without re-designing or re-training the algorithm. Linking two or more proteins with flexible linkers and using this as an input can simluate the interaction between the proteins by co-foldin them. 
+AlphaFold was trained to recognise the structure of proteins from the sequence in their monomeric form. However, quickly after the release of AlphaFold2 it became clear that in several cases AlphaFold can successfully predict the structure of protein complexes even without re-designing or re-training the algorithm. Linking two or more proteins with flexible linkers and using this as an input can simluate the interaction between the proteins by co-folding them. This opens up exciting possiblities to explore protein-protein interactions.
+
+Intrinsically disordered proteins/regions (IDPs/IDRs) very often exert their function through interactions with other protein partners. 
 
 ## *Running AlphaFold predictions*
 

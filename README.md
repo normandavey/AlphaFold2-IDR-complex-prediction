@@ -153,7 +153,7 @@ AlphaFold folds the two folded subunits of the integrin near perfectly (RMSD=0.5
 **GCN4 prototypic leucine zipper**
 *Definition:*
 A coiled-coil like dimer of two copies of the same amphipathic helix, held together by several hydrophobic interactions mediated largely by Leu residues.
-Composition: 0 ordered proteins + 2 IDR
+Composition: 0 ordered proteins + 2 IDRs
 PDB:1zik
 
 *Results:*
@@ -165,11 +165,10 @@ AlphaFold gets the structure near perfect (RMSD=0.311A), including the Leu side 
 
 </p>
 
-
 **p53 tetramerization domain**
 *Definition:*
 Four copies of the C-terminal tetramerization region of p53 forms a dimer of dimers, adopting an intertwined structure with high helical content further stabilized with short beta sheets.
-Composition: 0 ordered proteins + 4 IDR
+Composition: 0 ordered proteins + 4 IDRs
 PDB:2j0z
 
 *Results:*
@@ -178,9 +177,21 @@ Both the conformations and the relative orientation of the four chains is near p
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2j0z_structure_comparison.png" width="500" height="306">
 <p float="left">
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2j0z_lDDT.png" width="500" height="333"><img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2j0z_PAE.png" width="500" height="333">
-
 </p>
 
+**Autophagic SNARE core complex (Vamp8 / Syntaxin-17 / SNAP29)**
+*Definition:*
+Classical tetrameric coiled-coil (has 2 regions of a SNAP29 and 1-1 region of the other proteins). Since SNARE complexes assemble and disassemble, the unbound disordered state is biologically relevant. The tetramer assembles as a tightly packed fully parallel coiled-coil.
+Composition: 0 ordered proteins + 4 IDRs
+PDB:4wy4
+
+*Results:*
+AlphaFold correctly assembles the four chains into an overall coiled-coil-like conformation (see top structural figures) and has high confidence in the conformation of the individual residues (see pLDDT figure on bottom left, the low confidence regions are the linkers, which are removed from the structure). Chains C and D are correctly folded and positioned relative to each other. However, AlphaFold shows that it has low confidence in the relative orientation of chains A and B (see PAE figure on bottom right). In accord, both of these chains are placed in a conformation that makes only little contact with the other chains, and the orientation of chain A is reversed, running antiparallel compared to the other chains. This disrupts the naturally tight packing of the coiled-coil tetramer (see bottom-view structure figures in the middle in surface representation).
+
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/SNARE-summary.png" width="1000" height="872">
+<p float="left">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/4wy4_lDDT.png" width="500" height="333"><img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/4wy4_PAE.png" width="500" height="333">
+</p>
 
 
 

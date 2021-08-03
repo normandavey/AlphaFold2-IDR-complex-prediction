@@ -157,11 +157,12 @@ Composition: 0 ordered proteins + 2 IDR
 PDB:1zik
 
 *Results:*
-AlphaFold gets the structure near perfect (RMSD=0.311A), including the Leu side chains that hold the complex together.
+AlphaFold gets the structure near perfect (RMSD=0.311A), including the Leu side chains that hold the complex together. It does assign a high confidence to the residues, however, it does mark the relative orientation of the two helices as very uncertain (see PAE figure on the bottom right). This is also expressed in the predicted structure, as the two helices are oriented a bit further away from each other than in the experimental structure. In fact, in several predicted structures of the same complex the two helices are even further apart with AlphaFold predicting no contacts between them.
 
-<p float="left">
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1zik_structure_comparison.png" width="500" height="306">
-<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1zik_lDDT.png" width="500" height="333">
+<p float="left">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1zik_lDDT.png" width="500" height="333"><img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1zik_PAE.png" width="500" height="333">
+
 </p>
 
 
@@ -172,11 +173,12 @@ Composition: 0 ordered proteins + 4 IDR
 PDB:2j0z
 
 *Results:*
-Both the conformations and the relative orientation of the four chains is near perfect (RMSD=0.909A).
+Both the conformations and the relative orientation of the four chains is near perfect (RMSD=0.909A). In contrast to the GCN4 example, here AlphaFold is confident in not only the conformation of the residues but also the relative position of the four chains (see PAE figure on the bottom right). This difference might be due to the p53 tetramer being a more intertwined structure with asymmetry in terms of bound structure along the IDRs.
 
-<p float="left">
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2j0z_structure_comparison.png" width="500" height="306">
-<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2j0z_lDDT.png" width="500" height="333">
+<p float="left">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2j0z_lDDT.png" width="500" height="333"><img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2j0z_PAE.png" width="500" height="333">
+
 </p>
 
 

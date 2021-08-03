@@ -149,6 +149,20 @@ AlphaFold folds the two folded subunits of the integrin near perfectly (RMSD=0.5
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/5nem_lDDT.png" width="500" height="333">
 </p>
 
+### *Complexes with several IDRs*
+**GCN4 prototypic leucine zipper**
+*Definition:*
+A coiled-coil like dimer of two copies of the same amphipathic helix, held together by several hydrophobic interactions mediated largely by Leu residues.
+Composition: 0 ordered proteins + 2 IDR
+PDB:1zik
+
+*Results:*
+AlphaFold gets the structure near perfect (RMSD=0.311A), including the Leu side chains that hold the complex together.
+
+<p float="left">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1zik_structure_comparison.png" width="500" height="306">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1zik_lDDT.png" width="500" height="333">
+</p>
 
 
 

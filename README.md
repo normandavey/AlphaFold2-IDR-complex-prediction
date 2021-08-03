@@ -121,19 +121,33 @@ AlphaFold correctly folds the domain and it very precisely finds the correct pos
 
 **p27 bound to the CDK2:cyclinA complex**
 *Definition:*
-p27 is fully disordered with 83 residues binding to the ordered CDK2:cyclinA dimer. Upon binding p27 adopts an elongated structure containing several short patches of regular secondary structure and a longer helix that forms only very weak contacts and serves as a structural linker between the N- and C-terminal binding regions.
+p27 is fully disordered with a *long*, 83 residue stretch binding to the ordered CDK2:cyclinA dimer. Upon binding p27 adopts an *elongated structure* containing several short patches of *regular secondary structure* and a longer helix that forms only very weak contacts and serves as a structural linker between the N- and C-terminal binding regions.
 2 ordered proteins + 1 IDR
 PDB:1jsu
 
 *Results:*
 AlphaFold folds the domains correctly and they have the right relative orientation. It also assigns a structure to the disordered p27 that is strikingly close to the actual bound conformation; however, it cannot fold it on the surface of the domain dimer. It does find the correct binding pocket for the C-terminal bit, but otherwise predicts p27 to have no contact with the domains.
 AlphaFold confidence is high in the prediction, reflecting the confidence in the local structure of p27 (which is indeed close to the actual bound one) and not its relationship to the folded domains. The PAE graph clearly shows that AlphaFold correctly assesses that the relative orientation of p27 (the end of the graph below) compared to the position of the dimers is very low confidence.
+Since the predicted p27 conformation is close to the actual bound one even without predicting contacts, it is likely that AlphaFold learned this structure as it was in its training set.
 
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1jsu_structure_comparison.png" width="500" height="306">
 <p float="left">
  <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1jsu_lDDT.png" width="500" height="333"><img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1jsu_PAE.png" width="500" height="333">
  </p>
 
+**RGDLxxL motif in the foot-and-mouth disease virus capsid protein bound to integrin $\alphaV$\beta6**
+*Definition:*
+The *short IDR* contains an RGD motif that binds to the two ordered subunits of the integrin dimer with Arg contacting the $\alphaV subunit and the Asp contacting the $\beta6 subunit by *coordinating a divalent cation* embedded in the interacting integrin domain. In addition, the C-terminal flank of the RGD motif forms a short helix binding to two small hydrophobic patches on the $\beta6 subunit.
+2 ordered proteins + 1 IDR
+PDB:5nem
+
+*Results:*
+AlphaFold folds the two folded subunits of the integrin near perfectly (RMSD=0.552). The peptide is not folded into the binding groove; AlphaFold cannot identify the bound conformation or the binding pockets where the peptide would fit. This might be because the peptide is short and because the interaction with the domain is mediated through the coordination of a divalent cation that AF cannot model. Contrary to the p27 example, this IDR is short enough that AlphaFold couldn’t learn the bound conformation.
+
+<p float="left">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/5nem_structure_comparison.png" width="500" height="297">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/5nem_lDDT.png" width="500" height="333">
+</p>
 
 
 

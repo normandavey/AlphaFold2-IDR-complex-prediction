@@ -10,15 +10,13 @@ AlphaFold was trained to recognise the structure of proteins from the sequence i
 
 Intrinsically disordered proteins/regions (IDPs/IDRs) very often exert their function through interactions with other protein partners. Short binding IDRs often contain short linear motifs (SLiMs) where the interaction with the partner folded domain is driven by a few residues. The bound structures of SLiMs can be helical, irregular or they can form additional beta strands in an existing beta sheet of the partner domain. Longer IDRs can contain arrays of SLiMs and can form longer binding regions with highly varied secondary structure content in the bound form. IDRs can also form stable structures by interacting with each other forming homo- or heterooligomeric complexes.
 
-Here we selected 14 cases of complexes that involve one or more IDRs. The structure of each of these complexes have been experimentally determined and are in the PDB. We go through these complexes one by one, describe their distinguishing features and look at how the experimental complex is predicted by AlphaFold2.
-
+Here we selected 14 cases of complexes that involve one or more IDRs. The structure of each of these complexes have been experimentally determined and are in PDB. We go through these complexes one by one, describe their distinguishing features and look at how the experimental complex is predicted by AlphaFold2. After the examples we summarise the factors that seem to influence the success of AlphaFold in identifying the correct complex structure.
 
 ## *Running AlphaFold predictions*
 
 All AlphaFold predictions were run using the sequences defined in the PDB files (not including modified residues and other molecules). Predictions were done using the Google Colab notebooks by Sergey Ovchinnikov (@sokrypton), Milot Mirdita (@milot_mirdita) and Martin Steinegger (@thesteinegger). Credit goes to Minkyung Baek (@minkbaek) and Yoshitaka Moriwaki (@Ag_smith) as well for protein-complex prediction proof-of-concept in AlphaFold2.
 * homooligomers were predicted using the notebook for monomers/homooligomers, accessible here: https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb
 * heterooligomers were predicted using the dedicated notebook, accessible here: https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2_complexes.ipynb In the case of dimers, the default settings were used. In case of higher order oligomers, one chain was used on its own (usually the IDR if there is only one), and the rest of the chains were concatenated using a long linker (either several 'U's or several repeats of 'SG's)
-
 
 ## *Examples*
 
@@ -246,5 +244,21 @@ In all 10 tested examples AlphaFold correctly folds the peptides into a helical 
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/LxxLL-genuine_predictions_overlay.png" width="500" height="294">
 
 
+
+
+## *Conclusions*
+
+Based on these examples, there are several properties of the IDRs that seem to enable a better prediction on the complex structures:
+* Presence of regular secondary structures in the bound IDP conformation (helical conformation or beta augmentation)
+* Well defined, hydrophobic binding groove
+* Asymmetric bound IDP structure (in terms of secondary structural elements along the IDR sequence)
+Other propoerties that seem to decrease the chance of a successful prediction:
+* Short IDRs
+* Irregular bound structure
+* Phosphorylation-dependent binding
+* Presence of ions in the interface
+* Highly symmetric bound structures, such as long helices or arrays of short similar structural elements
+
+In general, AlphaFold performs remarkably well in predicting structures where IDRs are part of a multi-IDR single folding unit (such as p53 tetramer or E2F1-DP1-Rb) or where the IDR binds to a folded domain driven by hydrophobicity. In other cases AlphaFold often does not find the correct binding mode but even then it often correctly identifies the bound IDR structures (or at least the presence/absence of secondary structures) and the binding sites on domain surfaces (but not always the correct one - such as in the KID/KIX complex).
 
 

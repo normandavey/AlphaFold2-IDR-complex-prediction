@@ -29,9 +29,7 @@ In every example folded protein domains are shown in surface representation and 
 
 *Definition:*
 Short motif forming an amphipathic *helix* binding into a well defined, single hydrophobic pocket on the surface of the partner domain.
-
 Composition: 1 ordered protein + 1 IDR
-
 PDB:2gpo
 
 *Results:*
@@ -44,6 +42,7 @@ In the original structure only the core motif is visible, AlphaFold also predict
 </p>
 
 **RanBP2 SIM (SUMO interacting motif) bound to SUMO**
+
 *Definition:*
 Short motif forming an additional strand in the *beta sheet* of the partner domain (beta augmentation).
 Composition: 1 ordered protein + 1 IDR
@@ -59,6 +58,7 @@ AlphaFold correctly identifies the beta augmentation and the conformation of the
 </p>
 
 **Histone deacetylase 4 14-3-3 phosphomotif bound to 14-3-3gamma**
+
 *Definition:*
 A short IDR binding to a groove inside a 14-3-3 domain, adopting an *irregular conformation*. The interaction requires a *phosphorylated serine*.
 Composition: 1 ordered protein + 1 IDR
@@ -80,6 +80,7 @@ Using a phosphomimetic (modeling the interaction after switching the Ser to Glu 
 </p>
 
 **pKID binding to the KIX domain**
+
 *Definition:*
 The disordered KID region binds to the KIX domain upon phosphorylation. pKID binds to *two distinct patches* on KIX adopting *helical* bound structures. The interaction is *phospho-dependent* and KIX isn’t fully stable in the unbound form, so the prediction of the domain structure might be more challenging than usual.
 Composition: 1 ordered protein + 1 IDR
@@ -95,9 +96,10 @@ Interestingly, the region occupied by KID in the AlphaFold model is a true bindi
 </p>
 
 **TAD of RelA bound to the TAZ domain of CREB-binding protein (CBP)**
+
 *Definition:*
 The disordered RelA binding region is significantly longer than previous examples. It wraps around the TAZ domain making contacts at *4 distinct patches*, adopting mostly *helical conformations* at these 4 sites.
-1 ordered protein + 1 IDR
+Composition: 1 ordered protein + 1 IDR
 PDB:2lww
 
 *Results:*
@@ -109,9 +111,10 @@ AlphaFold correctly folds the TAZ domain of CBP, even though the native structur
 </p>
 
 **Cyclin-A2 bound to Cdc20**
+
 *Definition:*
 The disordered tail of cyclin-A2 binds to the beta propeller domain of Cdc20 using three motifs binding to *three separate pockets*. The bound structure of the IDR is *coil-like* without any regular secondary structures and the linkers between the three motifs remain disordered even upon binding.
-1 ordered protein + 1 IDR
+Composition: 1 ordered protein + 1 IDR
 PDB:6q6g
 
 *Results:*
@@ -123,9 +126,10 @@ AlphaFold folds the domain near perfectly; however, it cannot fold the IDR on th
 </p>
 
 **Phactr1 bound to PP1**
+
 *Definition:*
 A disordered part of Phactr1 wraps around the PP1 domain establishing *contacts at several points*. The N-terminal region adopts a *coil-like* structure with two short bits in *beta-augmentation*. The C-terminal region adopts a largely *helical* conformation.
-1 ordered protein + 1 IDR
+Composition: 1 ordered protein + 1 IDR
 PDB:6zee
 
 *Results:*
@@ -139,9 +143,10 @@ AlphaFold correctly folds the domain and it very precisely finds the correct pos
 ### *Motifs/IDRs binding to dimeric structured partners*
 
 **p27 bound to the CDK2:cyclinA complex**
+
 *Definition:*
 p27 is fully disordered with a *long*, 83 residue stretch binding to the ordered CDK2:cyclinA dimer. Upon binding p27 adopts an *elongated structure* containing several short patches of *regular secondary structure* and a longer helix that forms only very weak contacts and serves as a structural linker between the N- and C-terminal binding regions.
-2 ordered proteins + 1 IDR
+Composition: 2 ordered proteins + 1 IDR
 PDB:1jsu
 
 *Results:*
@@ -155,9 +160,10 @@ Since the predicted p27 conformation is close to the actual bound one even witho
  </p>
 
 **RGDLxxL motif in the foot-and-mouth disease virus capsid protein bound to integrin $\alphaV$\beta6**
+
 *Definition:*
 The *short IDR* contains an RGD motif that binds to the two ordered subunits of the integrin dimer with Arg contacting the $\alphaV subunit and the Asp contacting the $\beta6 subunit by *coordinating a divalent cation* embedded in the interacting integrin domain. In addition, the C-terminal flank of the RGD motif forms a short helix binding to two small hydrophobic patches on the $\beta6 subunit.
-2 ordered proteins + 1 IDR
+Composition: 2 ordered proteins + 1 IDR
 PDB:5nem
 
 *Results:*
@@ -170,8 +176,9 @@ AlphaFold folds the two folded subunits of the integrin near perfectly (RMSD=0.5
 
 ### *Complexes with several IDRs*
 **GCN4 prototypic leucine zipper**
+
 *Definition:*
-A coiled-coil like dimer of two copies of the same amphipathic helix, held together by several hydrophobic interactions mediated largely by Leu residues.
+A coiled-coil like dimer of two copies of the same *amphipathic helix*, held together by several hydrophobic interactions mediated largely by Leu residues.
 Composition: 0 ordered proteins + 2 IDRs
 PDB:1zik
 
@@ -184,8 +191,9 @@ AlphaFold gets the structure near perfect (RMSD=0.311A), including the Leu side 
 </p>
 
 **p53 tetramerization domain**
+
 *Definition:*
-Four copies of the C-terminal tetramerization region of p53 forms a dimer of dimers, adopting an intertwined structure with high helical content further stabilized with short beta sheets.
+Four copies of the C-terminal tetramerization region of p53 forms a dimer of dimers, adopting an *intertwined structure with high helical content* further stabilized with *short beta sheets*.
 Composition: 0 ordered proteins + 4 IDRs
 PDB:2j0z
 
@@ -198,8 +206,9 @@ Both the conformations and the relative orientation of the four chains is near p
 </p>
 
 **Autophagic SNARE core complex (Vamp8 / Syntaxin-17 / SNAP29)**
+
 *Definition:*
-Classical tetrameric coiled-coil (has 2 regions of a SNAP29 and 1-1 region of the other proteins). Since SNARE complexes assemble and disassemble, the unbound disordered state is biologically relevant. The tetramer assembles as a tightly packed fully parallel coiled-coil.
+Classical tetrameric coiled-coil (has 2 regions of a SNAP29 and 1-1 region of the other proteins). Since SNARE complexes assemble and disassemble, the unbound disordered state is biologically relevant. The tetramer assembles as a tightly packed fully parallel coiled-coil of four *long and symmetrical helices*.
 Composition: 0 ordered proteins + 4 IDRs
 PDB:4wy4
 
@@ -212,8 +221,9 @@ AlphaFold correctly assembles the four chains into an overall coiled-coil-like c
 </p>
 
 **Rb:E2F1:DP1 heterotrimer**
+
 *Definition:*
-A highly intertwined trimeric complex with the three IDRs serving as a single folding unit. The resulting structure is fairly compact, highly asymmetric and has a high regular secondary structure content.
+A *highly intertwined* trimeric complex with the three IDRs serving as a single folding unit. The resulting structure is fairly compact, *highly asymmetric* and has a *high regular secondary structure content*.
 Composition: 0 ordered proteins + 3 IDRs
 PDB:2aze
 
@@ -226,8 +236,9 @@ AlphaFold gives a near-perfect prediction on all three chains (overall RMSD=0.99
 </p>
 
 **A collagen triple helix binding the A3 domain from the von Willebrand Factor (vWF)**
+
 *Definition:*
-The collagen triple helix is built up from three identical chains with very high glycine and proline (with some prolines being modified to hydroxyproline), with each chain adopting a PPII-like conformation. This triple helix needs to fold into the correct conformation to create the binding site for the vWF domain, which can bind by making contacts with two out of the three collagen chains. In reality this happens sequentially, AlphaFold needs to build up the whole complex in a single step.
+The collagen triple helix is built up from three identical chains with very *high glycine and proline content* (with some prolines being modified to hydroxyproline), with each chain adopting a *PPII-like conformation*. This triple helix needs to fold into the correct conformation to create the binding site for the vWF domain, which can bind by making contacts with two out of the three collagen chains. In reality this happens sequentially, AlphaFold needs to build up the whole complex in a single step.
 Composition: 1 ordered protein + 3 IDRs
 PDB:4dmu
 

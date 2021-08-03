@@ -221,6 +221,14 @@ AlphaFold is able to fold the domain from vWF near perfectly (RMSD=0.592 for the
 </p>
 
 
+### *Predictions outside of the training set*
+**Predicting structures of bound LxxLL motifs**
+
+In all previous examples, the structures were taken from PDB (all were released before 2018) and hence they all were part of the AlphaFold2 training set. To see how good AlphaFold is in the prediction of novel bound structures of motifs, we ran it on 10 instances of the LxxLL motif (listed in [the ELM database](http://elm.eu.org/elms/LIG_NRBOX)) that have no solved structures. All of these instances have been verified to be true positives and since they all contain the same motif, we expect them to all bind to the same hydrophobic groove on the domain surface.
+In all 10 tested examples AlphaFold correctly folds the peptides into a helical conformation and places them into the correct binding pocket (novel predictions are in transparent cartoons, the experimentally verified structure of the NRIP1 LxxLL motif (PDB:2gpo) is shown in shown in purple):
+
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/LxxLL-genuine_predictions_overlay.png" width="500" height="294">
+
 
 
 

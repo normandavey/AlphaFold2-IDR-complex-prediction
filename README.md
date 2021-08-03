@@ -162,7 +162,6 @@ AlphaFold gets the structure near perfect (RMSD=0.311A), including the Leu side 
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1zik_structure_comparison.png" width="500" height="306">
 <p float="left">
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1zik_lDDT.png" width="500" height="333"><img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/1zik_PAE.png" width="500" height="333">
-
 </p>
 
 **p53 tetramerization domain**
@@ -193,6 +192,19 @@ AlphaFold correctly assembles the four chains into an overall coiled-coil-like c
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/4wy4_lDDT.png" width="500" height="333"><img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/4wy4_PAE.png" width="500" height="333">
 </p>
 
+**Rb:E2F1:DP1 heterotrimer**
+*Definition:*
+A highly intertwined trimeric complex with the three IDRs serving as a single folding unit. The resulting structure is fairly compact, highly asymmetric and has a high regular secondary structure content.
+Composition: 0 ordered proteins + 3 IDRs
+PDB:2aze
+
+*Results:*
+AlphaFold gives a near-perfect prediction on all three chains (overall RMSD=0.996A), including their conformation and relative orientation. AlphaFold also assigns high confidence to the prediction.
+
+<p float="left">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2aze_structure_comparison.png" width="500" height="306">
+<img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2aze_lDDT.png" width="500" height="333">
+</p>
 
 
 

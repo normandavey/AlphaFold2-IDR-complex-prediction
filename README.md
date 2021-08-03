@@ -268,6 +268,7 @@ Based on these examples, there are several properties of the IDRs that seem to e
 * Presence of regular secondary structures in the bound IDP conformation (helical conformation or beta augmentation)
 * Well defined, hydrophobic binding groove
 * Asymmetric bound IDP structure (in terms of secondary structural elements along the IDR sequence)
+
 Other propoerties that seem to decrease the chance of a successful prediction:
 * Short IDRs
 * Irregular bound structure

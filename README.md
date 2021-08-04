@@ -103,7 +103,7 @@ Composition: 1 ordered protein + 1 IDR
 PDB:2lww
 
 *Results:*
-AlphaFold correctly folds the TAZ domain of CBP, even though the native structure contains 3 Zn2+ ions, which AF cannot model. AlphaFold also correctly identifies the four binding surfaces and also folds RelA into helical conformations at these sites. However, in the predicted structure RelA is in the wrong orientation. In the figure below, the measured RelA (purple) wraps counterclockwise with both termini on the bottom. The predicted RelA wraps in the opposite direction, with both termini on the top. AlphaFold again assigns a high confidence score to the peptide prediction.
+AlphaFold correctly folds the TAZ domain of CBP, even though the native structure contains 3 Zn2+ ions, which AF cannot explicitly model (however, it was trained to correctly predict the structures of ion-containing proteins even without ions present). AlphaFold also correctly identifies the four binding surfaces and also folds RelA into helical conformations at these sites. However, in the predicted structure RelA is in the wrong orientation. In the figure below, the measured RelA (purple) wraps counterclockwise with both termini on the bottom. The predicted RelA wraps in the opposite direction, with both termini on the top. AlphaFold again assigns a high confidence score to the peptide prediction.
 
 <p float="left">
 <img src="https://github.com/normandavey/AlphaFold2-IDR-complex-prediction/blob/main/2lww_structure_comparison.png" width="500" height="306">
